@@ -10,7 +10,7 @@ con = psycopg2.connect(
 
 print("Database opened successfully")
 
-cur = con.cursor()  # Создание базы данных
+cur = con.cursor()  # Создание таблицы
 cur.execute('''CREATE TABLE STUDENT
      (ADMISSION INT PRIMARY KEY NOT NULL,
      NAME TEXT NOT NULL,
